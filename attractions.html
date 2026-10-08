@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions | Local Tourism Guide</title>
+  <meta name="description" content="Browse nature, culture, heritage, food and recreation attractions in the local area, with visitor tips for each place.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- Skip link: lets keyboard and screen reader users jump straight to the main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== SITE HEADER (same on every page) ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Local Tourism Guide, home page">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2C7 7 5 11 5 14a7 7 0 0 0 14 0c0-3-2-7-7-12zm0 18a1 1 0 0 1-1-1v-5.6l-2.3-2.3a1 1 0 1 1 1.4-1.4L12 11.6l1.9-1.9a1 1 0 1 1 1.4 1.4L13 13.4V19a1 1 0 0 1-1 1z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-text">Local Tourism Guide</span>
+      </a>
+
+      <!-- Mobile menu button: shown on small screens, controlled by js/script.js -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+
+      <!-- Main navigation -->
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="attractions.html" aria-current="page">Attractions</a></li>
+          <li><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+          <li><a class="nav-link" href="travel-tips.html">Travel Tips</a></li>
+          <li><a class="nav-link nav-link-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ===================== PAGE BANNER ===================== -->
+    <section class="page-banner page-banner-attractions" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Attractions</li>
+          </ol>
+        </nav>
+        <h1 id="page-heading">Attractions</h1>
+        <p>Waterfalls, markets, museums and more. Find the experiences that match your interests.</p>
+      </div>
+    </section>
+
+    <!-- ===================== INTRODUCTION AND FILTER ===================== -->
+    <section class="section" aria-labelledby="explore-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Things to do</p>
+          <h2 id="explore-heading">Explore by interest</h2>
+          <p>Use the buttons below to filter attractions by category. Each listing includes a short visitor tip to help you make the most of your time. Opening times can change by season, so check locally before you set out.</p>
+        </div>
+
+        <!-- Category filter buttons: handled by js/script.js -->
+        <div class="filter-bar" role="group" aria-label="Filter attractions by category">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button class="filter-btn" type="button" data-filter="culture" aria-pressed="false">Culture</button>
+          <button class="filter-btn" type="button" data-filter="heritage" aria-pressed="false">Heritage</button>
+          <button class="filter-btn" type="button" data-filter="food" aria-pressed="false">Food</button>
+          <button class="filter-btn" type="button" data-filter="recreation" aria-pressed="false">Recreation</button>
+        </div>
+
+        <!-- Live status message: announces how many attractions are showing -->
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Showing all 10 attractions.</p>
+
+        <!-- ===================== ATTRACTION CARDS ===================== -->
+        <div class="grid grid-3 attraction-grid">
+
+          <!-- Nature -->
+          <article class="card attraction-card" id="cascade-falls" data-category="nature">
+            <div class="card-media">
+              <img src="assets/images/attraction-waterfall-trail.jpg" alt="Illustration of a tall waterfall pouring into a pool, surrounded by pine trees" width="1200" height="800" loading="lazy">
+              <span class="badge badge-nature">Nature</span>
+            </div>
+            <div class="card-body">
+              <h3>Cascade Falls Trail</h3>
+              <p>An easy-to-moderate forest path leading to a dramatic waterfall. Benches and a viewing deck make it a pleasant stop for all ages.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Wear shoes with good grip, as rocks near the water can be slippery.</p>
+            </div>
+          </article>
+
+          <article class="card attraction-card" id="botanical-gardens" data-category="nature">
+            <div class="card-media">
+              <img src="assets/images/attraction-botanical-gardens.jpg" alt="Illustration of botanical gardens with a glasshouse, a winding path, trees and flower beds" width="1200" height="800" loading="lazy">
+              <span class="badge badge-nature">Nature</span>
+            </div>
+            <div class="card-body">
+              <h3>Riverside Botanical Gardens</h3>
+              <p>Landscaped lawns, flowering plants and a glasshouse of tropical species. A peaceful place for a picnic or slow afternoon stroll.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Visit in the late afternoon for softer light and cooler temperatures.</p>
+            </div>
+          </article>
+
+          <!-- Culture -->
+          <article class="card attraction-card" id="culture-museum" data-category="culture">
+            <div class="card-media">
+              <img src="assets/images/attraction-culture-museum.jpg" alt="Illustration of a classical museum building with columns and wide front steps" width="1200" height="800" loading="lazy">
+              <span class="badge badge-culture">Culture</span>
+            </div>
+            <div class="card-body">
+              <h3>Living Culture Museum</h3>
+              <p>Exhibits on music, crafts, festivals and everyday life tell the story of the many communities who call the area home.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Ask at the front desk about guided talks, which often run at set times.</p>
+            </div>
+          </article>
+
+          <article class="card attraction-card" id="arts-centre" data-category="culture">
+            <div class="card-media">
+              <img src="assets/images/attraction-arts-centre.jpg" alt="Illustration of a modern arts centre with a colourful geometric mural on its front wall" width="1200" height="800" loading="lazy">
+              <span class="badge badge-culture">Culture</span>
+            </div>
+            <div class="card-body">
+              <h3>Community Arts Centre</h3>
+              <p>Rotating exhibitions by local artists, a small craft shop and regular evening performances, from drumming to spoken word.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Check the noticeboard by the entrance for weekend workshops.</p>
+            </div>
+          </article>
+
+          <!-- Heritage -->
+          <article class="card attraction-card" id="old-town" data-category="heritage">
+            <div class="card-media">
+              <img src="assets/images/attraction-old-town.jpg" alt="Illustration of a row of colourful historic townhouses beside a cobbled street" width="1200" height="800" loading="lazy">
+              <span class="badge badge-heritage">Heritage</span>
+            </div>
+            <div class="card-body">
+              <h3>Old Town Walking Route</h3>
+              <p>A self-guided loop past painted wooden townhouses, historic churches and quiet squares. Information boards explain key buildings.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Allow around two hours and carry a hat, as some streets have little shade.</p>
+            </div>
+          </article>
+
+          <article class="card attraction-card" id="harbour-fort" data-category="heritage">
+            <div class="card-media">
+              <img src="assets/images/attraction-harbour-fort.jpg" alt="Illustration of stone fort walls on the seafront beside a red and white striped lighthouse" width="1200" height="800" loading="lazy">
+              <span class="badge badge-heritage">Heritage</span>
+            </div>
+            <div class="card-body">
+              <h3>Harbour Fort and Lighthouse</h3>
+              <p>Old defensive walls with sweeping sea views and a landmark lighthouse. A favourite spot for photographs and sea breezes.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Sunset is especially beautiful here, so plan an evening visit.</p>
+            </div>
+          </article>
+
+          <!-- Food -->
+          <article class="card attraction-card" id="central-market" data-category="food">
+            <div class="card-media">
+              <img src="assets/images/attraction-central-market.jpg" alt="Illustration of market stalls with striped awnings and baskets of fresh fruit" width="1200" height="800" loading="lazy">
+              <span class="badge badge-food">Food</span>
+            </div>
+            <div class="card-body">
+              <h3>Central Market</h3>
+              <p>Rows of stalls selling fresh fruit, vegetables, spices, snacks and handmade souvenirs. A colourful introduction to local life.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Arrive early for the best choice and bring small notes for purchases.</p>
+            </div>
+          </article>
+
+          <article class="card attraction-card" id="food-street" data-category="food">
+            <div class="card-media">
+              <img src="assets/images/attraction-food-street.jpg" alt="Illustration of food carts under strings of warm lights on an evening street" width="1200" height="800" loading="lazy">
+              <span class="badge badge-food">Food</span>
+            </div>
+            <div class="card-body">
+              <h3>Riverside Food Street</h3>
+              <p>As evening falls, food carts serve grilled dishes, savoury pastries, fresh juices and sweet treats along the waterfront.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Choose busy stalls where food is cooked fresh in front of you.</p>
+            </div>
+          </article>
+
+          <!-- Recreation -->
+          <article class="card attraction-card" id="river-kayaking" data-category="recreation">
+            <div class="card-media">
+              <img src="assets/images/attraction-river-kayaking.jpg" alt="Illustration of two people paddling kayaks on a calm river lined with trees" width="1200" height="800" loading="lazy">
+              <span class="badge badge-recreation">Recreation</span>
+            </div>
+            <div class="card-body">
+              <h3>River Kayaking</h3>
+              <p>Paddle calm stretches of river with experienced local operators. Suitable for beginners, with guided and self-led options.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Always wear the life jacket provided and apply waterproof sunscreen.</p>
+            </div>
+          </article>
+
+          <article class="card attraction-card" id="sandy-bay" data-category="recreation">
+            <div class="card-media">
+              <img src="assets/images/attraction-sandy-bay-beach.jpg" alt="Illustration of a sandy beach with palm trees, a red umbrella and a sailboat at sea" width="1200" height="800" loading="lazy">
+              <span class="badge badge-recreation">Recreation</span>
+            </div>
+            <div class="card-body">
+              <h3>Sandy Bay Beach</h3>
+              <p>A wide sandy beach for swimming, beach games and relaxing in the shade of palm trees. Small cafés operate nearby.</p>
+              <p class="visitor-tip"><strong>Visitor tip:</strong> Swim only in marked areas and follow any posted safety flags.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CALL TO ACTION ===================== -->
+    <section class="section section-tight" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2 id="cta-heading">Getting ready to explore?</h2>
+            <p>Read our practical advice on transport, weather, safety and local customs before you head out.</p>
+          </div>
+          <a class="btn btn-light btn-lg" href="travel-tips.html">View Travel Tips</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== SITE FOOTER (same on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-title">Local Tourism Guide</p>
+        <p>Helping visitors explore the area responsibly, support local businesses and leave with great memories.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer quick links">
+        <h2 class="footer-heading">Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-info">
+        <h2 class="footer-heading">Good to know</h2>
+        <p>Information on this website is a general visitor guide. Always confirm prices, opening times and bookings directly with providers.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span class="js-year">2026</span> Local Tourism Guide. All rights reserved.</p>
+      <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
